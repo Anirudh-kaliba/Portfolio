@@ -365,6 +365,61 @@ export const DATA = {
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
+
+    {
+      title: "AI Resume Builder",
+      href: "https://airesumebuilder.com",
+      dates: "Feb 2024 - March 2024",
+      active: true,
+      description:
+        "An AI-powered resume builder that helps users create professional resumes with customizable templates and AI-generated content suggestions.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "MongoDB",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Magic UI",
+        "OpenAI API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://airesumebuilder.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/ai-resume-builder.mp4",
+    },
+    {
+      title: "DevMeet",
+      href: "https://devmeet.com",
+      dates: "Nov 2023 - Dec 2023",
+      active: true,
+      description:
+        "A social platform for developers to collaborate, network, and find job opportunities. Features real-time chat, project collaboration, and AI-powered job matching.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Firebase",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Magic UI",
+        "Supabase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://devmeet.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/devmeet.mp4",
+    },
   ],
   hackathons: [
     {

@@ -8,12 +8,12 @@ import { ABOUT } from "@/data/resume";
 import Navbar from "@/components/navbar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import TypingAnimation from "@/components/magicui/typing-animation";
-import CircularSkills from "@/components/magicui/circularskills";
 import { HackathonCard } from "@/components/hackathon-card";
 import { Orbitron } from "next/font/google";
 import WorkExperience from "@/components/ui/workexperience";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Certifications } from "@/components/ui/card-spotlight";
+import SkillsSection from "@/components/magicui/skills";
 
 const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -94,7 +94,7 @@ const Pages = () => {
         Skills
       </h1>
       <div className="w-full max-w-5xl mb-16">
-        <CircularSkills />
+        <SkillsSection />
       </div>
 
       {/* Projects Section */}
