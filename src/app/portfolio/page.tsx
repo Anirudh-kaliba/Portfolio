@@ -15,6 +15,9 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Certifications } from "@/components/ui/card-spotlight";
 import SkillsSection from "@/components/magicui/skills";
 import { ArrowUpIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
+import BlurFade from "@/components/magicui/blur-fade";
+const BLUR_FADE_DELAY = 0.04;
 
 const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -81,7 +84,7 @@ const Pages = () => {
         <HoverEffect
           items={DATA.education.map((edu) => ({
             title: edu.school,
-            description: `<span class="math-inline">\{edu\.degree\} \(</span>{edu.start} - ${edu.end})`,
+            description: `${edu.degree} (${edu.start} - ${edu.end})`,
             link: edu.href,
             logoUrl: edu.logoUrl,
           }))}
@@ -146,6 +149,21 @@ const Pages = () => {
         Contact Me
       </h1>
       <div className="w-full max-w-5xl mb-8 sm:mb-12 md:mb-16">
+        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <div className="space-y-3">
+            <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Want to chat? Just shoot me a dm{" "}
+              <Link
+                href={DATA.contact.social.X.url}
+                className="text-blue-500 hover:underline"
+              >
+                with a direct question on twitter
+              </Link>{" "}
+              and I&apos;ll respond whenever I can. I will ignore all
+              soliciting.
+            </p>
+          </div>
+        </BlurFade>
         <Contactcard />
       </div>
 

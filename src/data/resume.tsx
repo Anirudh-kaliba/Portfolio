@@ -392,7 +392,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/ai-resume-builder.mp4",
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
       title: "DevMeet",
@@ -418,7 +418,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/devmeet.mp4",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
     },
   ],
   hackathons: [
