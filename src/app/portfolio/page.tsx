@@ -15,7 +15,6 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Certifications } from "@/components/ui/card-spotlight";
 import SkillsSection from "@/components/magicui/skills";
 import { ArrowUpIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
 import BlurFade from "@/components/magicui/blur-fade";
 const BLUR_FADE_DELAY = 0.04;
 
@@ -152,15 +151,8 @@ const Pages = () => {
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <div className="space-y-3">
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Want to chat? Just shoot me a dm{" "}
-              <Link
-                href={DATA.contact.social.X.url}
-                className="text-blue-500 hover:underline"
-              >
-                with a direct question on twitter
-              </Link>{" "}
-              and I&apos;ll respond whenever I can. I will ignore all
-              soliciting.
+              Have a question? Let us know! Fill out the form below, and
+              we&apos;ll assist you. . 🤝
             </p>
           </div>
         </BlurFade>
